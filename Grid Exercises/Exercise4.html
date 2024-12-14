@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #4</title>
+    <style>
+        body {
+            background-color: rgb(141, 182, 122);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: (4, 1fr);
+            grid-template-rows: (5, 1fr);
+            width: 35%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(144, 216, 235);
+            padding: 20px;
+            gap: 15px;
+            border-radius: 5px;
+
+        }
+
+        .items {
+            background-color: rgb(253, 250, 211);
+            box-shadow: 0px 5px #9c9a9a;
+            align-content: center;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(61, 61, 61);
+            border-radius: 5px;
+        }
+
+        .item1 {
+            grid-column: span 4;  
+        }
+
+        .signs {
+            background-color: rgb(255, 255, 105);
+        }
+
+        .c-sign {
+            background-color: rgb(218, 83, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="items item1"></div>
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-numbers signs">+</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items item-numbers signs">-</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items item-numbers signs">*</div>
+        <div class="items item-numbers c-sign">C</div>
+        <div class="items">0</div>
+        <div class="items">=</div>
+        <div class="items item-numbers signs">/</div>
+
+    </div>
+</body>
+
+</html>

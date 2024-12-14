@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #5</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(60, 1fr);
+            gap: 15px
+        }
+
+        .items {
+            background-color: rgb(71, 187, 255);
+            color: white;
+            text-align: center;
+            align-content: center;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .fisrt-row {
+            grid-column: span 60
+        }
+
+        .secons-row {
+            grid-column: span 30
+        }
+
+        .third-row {
+            grid-column: span 20
+        }
+
+        .fourth-row {
+            grid-column: span 15
+        }
+
+        .fifth-row {
+            grid-column: span 12
+        }
+
+        .sixth-row {
+            grid-column: span 10
+        }
+
+        .last-row {
+            grid-row: span 3;
+            grid-column: span 60;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="items fisrt-row">60 GS is starter kit for the CSS Grid.</div>
+        <div class="items secons-row">1</div>
+        <div class="items secons-row">2</div>
+        <div class="items third-row">1</div>
+        <div class="items third-row">2</div>
+        <div class="items third-row">3</div>
+        <div class="items fourth-row">1</div>
+        <div class="items fourth-row">2</div>
+        <div class="items fourth-row">3</div>
+        <div class="items fourth-row">4</div>
+        <div class="items fifth-row">1</div>
+        <div class="items fifth-row">2</div>
+        <div class="items fifth-row">3</div>
+        <div class="items fifth-row">4</div>
+        <div class="items fifth-row">5</div>
+        <div class="items sixth-row">1</div>
+        <div class="items sixth-row">2</div>
+        <div class="items sixth-row">3</div>
+        <div class="items sixth-row">4</div>
+        <div class="items sixth-row">5</div>
+        <div class="items sixth-row">6</div>
+        <div class="items last-row">
+            <p>Why 60?</p>
+            <p>
+                Because the number 60 is dividable by 2,3,4,5 and 6.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
